@@ -265,29 +265,32 @@ export default function LandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-white/[0.04] rounded-xl overflow-hidden">
-            {FEATURES.map((f) => (
-              <Link
-                key={f.label}
-                href={f.label === "AI Analyst" ? "/analyst" : `/${f.label.toLowerCase().replace(/ /g, "-")}`}
-                className="group bg-[#09090b] p-5 hover:bg-white/[0.02] transition-colors"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-0.5">
-                    <div className="w-8 h-8 rounded-md flex items-center justify-center" style={{ background: `${f.accent}12`, border: `1px solid ${f.accent}20` }}>
-                      <f.icon size={14} style={{ color: f.accent }} />
+            {FEATURES.map((f) => {
+              const href = f.label === "AI Analyst" ? "/analyst" : `/${f.label.toLowerCase().replace(/ /g, "-")}`;
+              return (
+                <Link
+                  key={f.label}
+                  href={href}
+                  className="group bg-[#09090b] p-5 hover:bg-white/[0.02] transition-colors"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 mt-0.5">
+                      <div className="w-8 h-8 rounded-md flex items-center justify-center" style={{ background: `${f.accent}12`, border: `1px solid ${f.accent}20` }}>
+                        <f.icon size={14} style={{ color: f.accent }} />
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="font-mono text-[10px] tracking-[0.06em] text-zinc-600">{f.num}</span>
+                        <span className="text-[14px] font-medium text-zinc-200 group-hover:text-zinc-100 transition-colors">{f.label}</span>
+                        <ArrowUpRight size={12} className="text-zinc-700 group-hover:text-zinc-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                      </div>
+                      <p className="text-[13px] text-zinc-500 leading-[1.6]">{f.desc}</p>
                     </div>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <span className="font-mono text-[10px] tracking-[0.06em] text-zinc-600">{f.num}</span>
-                      <span className="text-[14px] font-medium text-zinc-200 group-hover:text-zinc-100 transition-colors">{f.label}</span>
-                      <ArrowUpRight size={12} className="text-zinc-700 group-hover:text-zinc-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                    </div>
-                    <p className="text-[13px] text-zinc-500 leading-[1.6]">{f.desc}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
