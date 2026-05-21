@@ -77,7 +77,7 @@ export default function LandingPage() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-zinc-100 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-100 mb-6 leading-tight">
             Real-time on-chain data,
             <br />
             <span className="text-amber-400">actionable intelligence.</span>
@@ -89,7 +89,7 @@ export default function LandingPage() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
             <Link href="/dashboard" className="w-full sm:w-auto px-6 py-3 rounded-xl bg-amber-500 text-black text-sm font-semibold hover:bg-amber-400 transition-colors flex items-center justify-center gap-2">
               Start Analyzing <ArrowRight size={16} />
             </Link>
@@ -99,7 +99,7 @@ export default function LandingPage() {
           </div>
 
           {/* Terminal Card */}
-          <div className="max-w-2xl mx-auto rounded-xl border border-zinc-800 bg-[#0c0c0e] overflow-hidden text-left">
+          <div className="max-w-xl mx-auto rounded-xl border border-zinc-800 bg-[#0c0c0e] overflow-hidden text-left">
             <div className="flex items-center gap-2 px-4 py-2.5 border-b border-zinc-800/50">
               <div className="w-3 h-3 rounded-full bg-red-500/60" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
@@ -158,21 +158,21 @@ export default function LandingPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section id="modules" className="py-20 px-6 border-t border-zinc-800/50">
+      <section id="modules" className="py-20 px-6 border-t border-zinc-800/30">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-zinc-100 mb-3">Everything you need</h2>
             <p className="text-zinc-500 max-w-lg mx-auto">From real-time market data to AI-powered analysis. Eight specialized modules, each backed by dedicated system prompts.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
             {FEATURES.map((f) => {
               const href = f.title === "AI Analyst" ? "/analyst" : `/${f.title.toLowerCase().replace(/ /g, "-")}`;
               return (
                 <Link
                   key={f.title}
                   href={href}
-                  className="group p-5 rounded-xl border border-zinc-800 bg-zinc-950 hover:border-zinc-700 transition-colors"
+                  className="group p-6 rounded-xl border border-zinc-800 bg-zinc-950 hover:border-zinc-700 transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-4">
                     <f.icon size={18} className="text-amber-400" />
@@ -187,7 +187,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="py-20 px-6 border-t border-zinc-800/50">
+      <section className="py-20 px-6 border-t border-zinc-800/30">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-zinc-100 mb-3">How it works</h2>
@@ -213,7 +213,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── TECH STACK ── */}
-      <section className="py-20 px-6 border-t border-zinc-800/50">
+      <section className="py-20 px-6 border-t border-zinc-800/30">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-zinc-100 mb-3">Built with modern stack</h2>
@@ -241,7 +241,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 px-6 border-t border-zinc-800/50">
+      <section className="py-20 px-6 border-t border-zinc-800/30">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-zinc-100 mb-3">Ready to analyze?</h2>
           <p className="text-zinc-500 mb-8">No sign-up required. Open the dashboard and start exploring.</p>
@@ -252,7 +252,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="border-t border-zinc-800/50 py-8 px-6">
+      <footer className="border-t border-zinc-800/30 py-8 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-5 h-5 rounded bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
