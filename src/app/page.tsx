@@ -68,7 +68,7 @@ export default function LandingPage() {
       </nav>
 
       {/* ── HERO ── */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-36 pb-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-500 mb-8">
@@ -77,7 +77,7 @@ export default function LandingPage() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-100 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-100 mb-6 leading-tight">
             Real-time on-chain data,
             <br />
             <span className="text-amber-400">actionable intelligence.</span>
@@ -99,7 +99,7 @@ export default function LandingPage() {
           </div>
 
           {/* Terminal Card */}
-          <div className="max-w-xl mx-auto rounded-xl border border-zinc-800 bg-[#0c0c0e] overflow-hidden text-left">
+          <div className="max-w-lg mx-auto rounded-xl border border-zinc-800 bg-[#0c0c0e] overflow-hidden text-left">
             <div className="flex items-center gap-2 px-4 py-2.5 border-b border-zinc-800/50">
               <div className="w-3 h-3 rounded-full bg-red-500/60" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
@@ -158,7 +158,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section id="modules" className="py-20 px-6 border-t border-zinc-800/30">
+      <section id="modules" className="py-24 px-6 border-t border-zinc-800/20">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-zinc-100 mb-3">Everything you need</h2>
@@ -187,7 +187,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="py-20 px-6 border-t border-zinc-800/30">
+      <section className="py-24 px-6 border-t border-zinc-800/20">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-zinc-100 mb-3">How it works</h2>
@@ -213,7 +213,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── TECH STACK ── */}
-      <section className="py-20 px-6 border-t border-zinc-800/30">
+      <section className="py-24 px-6 border-t border-zinc-800/20">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-zinc-100 mb-3">Built with modern stack</h2>
@@ -241,7 +241,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 px-6 border-t border-zinc-800/30">
+      <section className="py-24 px-6 border-t border-zinc-800/20">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-zinc-100 mb-3">Ready to analyze?</h2>
           <p className="text-zinc-500 mb-8">No sign-up required. Open the dashboard and start exploring.</p>
