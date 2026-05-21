@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40">
+  <rect width="180" height="40" rx="8" fill="#09090b"/>
+  <path d="M10 28V12h6l4 7 4-7h2v16h-2.5V18l-4.5 7.5h-3l-4.5-7.5v10H10z" fill="#f59e0b"/>
+  <circle cx="36" cy="12" r="2.5" fill="#f59e0b" opacity="0.6"/>
+  <text x="48" y="27" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#fafafa">NexPul</text>
+</svg>
